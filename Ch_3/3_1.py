@@ -1,6 +1,4 @@
-
-
-def right_justify(string):
+def right_justify(string: str):
     concat_string = ' ' * (70-len(string)) + string
     return concat_string
 

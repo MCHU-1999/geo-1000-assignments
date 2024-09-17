@@ -1,3 +1,7 @@
+def right_justify(string: str):
+    concat_string = ' ' * (70-len(string)) + string
+    return concat_string
+
 # +----+----+||| ||| ||| ||| +----+----+ ||| ||| ||| ||| +----+----+
 
 def grid(row_num: int, col_num: int, size = 4):
@@ -9,6 +13,11 @@ def grid(row_num: int, col_num: int, size = 4):
 
 
 if __name__ == '__main__':
+    print('monty')
+    print(right_justify('monty'))
+
+    print('\n')
+
     print('GRID:\n')
     print(grid(3, 3, 4))
     
